@@ -1,0 +1,31 @@
+#search #search-movie {
+    margin-bottom: 40px;
+}
+
+#search .custom-card {
+    padding: 20px;
+}
+
+#search .custom-card img {
+    height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#navbar img {
+    margin-left: -350px !important;
+}
+
+#indice a {
+    margin-left: 20px !important;
+    font-size: 25px;
+}
+
+#indice {
+    margin-left: 330px;
+}

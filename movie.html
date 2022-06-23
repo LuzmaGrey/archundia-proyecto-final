@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CuevaMovie</title>
+        <link rel="shortcut icon" href="/img/cinema.png" type="image/x-icon">
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="./CSS/movie.css">
+        <script src="./JS/jquery-3.5.1.min.js"></script>
+        <script src="./JS/popper.js"></script>
+        <script src="./JS/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/4e3abf91dc.js" crossorigin="anonymous"></script>
+        <script src="./JS/movie.js"></script>
+    </head>
+    <body id="movie">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img
+                        src="./img/palomitas.png"
+                        width="40"
+                        height="40"
+                        alt="Peliculas"
+                    >
+                </a>
+                <div class="collapse navbar-collapse" id="indice">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./search.html">Buscador</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid movie-info">
+            <div class="bg-color-custom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5 movie-info__poster"></div>
+                        <div class="col-7 movie-info__data"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal-->
+        <!--tabindex para establecer explícitamente la posición de pestaña de un elemento-->
+        <!--role="dialog" ventana de aplicación que está diseñada para interrumpir el procesamiento actual-->
+        <!--aria-hidden atributo puede exponer u ocultar contenido no interactivo de la API de accesibilidad-->
+        <!--data-dismiss="modal" para cerrar el modal cuando presiona el boton-->
+        <!--aria-label se utiliza para definir una cadena que etiqueta el elemento actual-->
+        <div
+            class="modal fade"
+            id="video-teaser"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="video-teaser-iframe"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
